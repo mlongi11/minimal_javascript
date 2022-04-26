@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Howdy</h1>
+  <script>
+    // challenge
+    function for_each_in(array, instructions){
+      for (let i = 0; i < array.length; i++) {
+      instructions(array[i]);
+      }  
+    }
+
+    let fruits = ["apples", "oranges", "bananas", "pears"];
+    for_each_in(fruits, function(item){
+      console.log(`I like ${item}`);
+    });
+
+    // arrays
+    // let fruits = ["apples", "oranges", "bananas"];
+    // console.log(fruits[1]);
+    // console.log(fruits.length);
+
+    // methods with arguments, blocks and block variables
+    // function announce(salutation, valediction, instructions){
+    //   console.log(`********** ${salutation} **********`);
+    //   instructions("*******");
+    //   console.log(`********** ${valediction} **********`);
+    // }
+
+    // announce("DEAR PASSENGER", "THANKS FOR FLYING", function(accentCharacter){
+    //   console.log(accentCharacter + " Your flight is boarding in 5 mins. " + accentCharacter);
+    // });
+
+    // providing block variables
+    // function announce(instructions) {
+    //   console.log("********* DEAR PASSENGER *********");
+    //   instructions("*");
+    //   console.log("********* THANK YOU FOR FLYING *********");
+    // }
+
+    // announce(function(accentCharacter){
+    //   console.log(`${accentCharacter} Your flight is boarding in 5 mins. ${accentCharacter}`);
+    // });
+
+    // arguments and blocks
+    // function announce(salutation, valediction, announcement) {
+    //   console.log(`********** ${salutation} **********`);
+    //   announcement();
+    //   console.log(`********** ${valediction} **********`);
+    // }
+
+    // announce("DEAR PASSENGER", "THANKS FOR FLYING", function(){
+    //     console.log("Your flight is boarding in 5 minutes.")
+    // });
+
+
+    // methods accepting codes
+    // function announce(instructions) {
+    //   console.log(`********** DEAR PASSENGER **********`);
+    //   instructions();
+    //   console.log(`********** THANKS FOR FLYING **********`);
+    // }
+
+    // announce(function() {
+    //   console.log("Your flight is boarding in 5 mins.");
+    // });
+    
+    // for loop
+    for (let i = 2; i < 6; i++) {
+      console.log(i*i)
+    }  
+    
+    // if statements
+    let city = "Chicago";
+
+    if (city === "Chicago") {
+      console.log("You live in the best city ever!");
+    } else if (city === "Berlin") {
+      console.log("Great city!");
+    } else {
+      console.log("You live in a nice city.")
+    }
+
+    // functions
+    function greet(name) {
+      console.log(`howdy ${name}!`);
+    }
+
+    greet("Max");
+
+    // let name = "Max";
+    //console.log(`howdy ${name}!`);
+  </script>
+</body>
+</html>
